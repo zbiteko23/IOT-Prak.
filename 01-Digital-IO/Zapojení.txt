@@ -1,0 +1,11 @@
+## Použité součástky
+- Raspberry Pi Pico
+- LED
+- rezistor 220–330 Ω
+- tlačítko
+- breadboard
+- propojovací vodiče
+
+## Zapojení
+- LED: GP15 → rezistor → LED → GND
+- Tlačítko: GP14 → tlačítko → GND

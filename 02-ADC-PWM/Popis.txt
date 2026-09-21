@@ -1,0 +1,5 @@
+## Funkce programu
+
+Raspberry Pi Pico čte pomocí ADC polohu potenciometru.
+Podle naměřené hodnoty následně pomocí PWM nastavuje jas LED.
+Čím více otočíme potenciometrem, tím více se LED rozsvítí.

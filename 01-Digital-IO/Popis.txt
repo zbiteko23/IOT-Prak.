@@ -1,0 +1,3 @@
+## Funkce programu
+Po stisknutí tlačítka se LED rozsvítí.
+Po uvolnění tlačítka LED zhasne.

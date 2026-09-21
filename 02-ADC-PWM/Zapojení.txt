@@ -1,0 +1,15 @@
+## Použité součástky
+
+- Raspberry Pi Pico
+- potenciometr 10 kΩ
+- LED
+- rezistor 220–330 Ω
+- breadboard
+- propojovací vodiče
+
+## Zapojení
+
+Potenciometr:
+- krajní vývod → 3V3
+- prostřední vývod → GP26 (ADC0)
+- krajní vývod → GND
