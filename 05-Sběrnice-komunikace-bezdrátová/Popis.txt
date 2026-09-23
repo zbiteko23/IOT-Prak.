@@ -1,0 +1,3 @@
+Cvičení demonstruje bezdrátovou komunikaci pomocí Bluetooth Low Energy (BLE). Telefon funguje jako klient a Raspberry Pi Pico W jako BLE zařízení. Telefon zapisuje data do BLE charakteristiky a Pico W podle přijatého příkazu ovládá vestavěnou LED.
+
+Výsledek: Bluetooth komunikace mezi telefonem a Raspberry Pi Pico W funguje a pomocí telefonu lze bezdrátově ovládat LED.

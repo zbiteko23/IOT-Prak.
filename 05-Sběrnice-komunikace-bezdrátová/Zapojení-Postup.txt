@@ -1,0 +1,22 @@
+Použité součástky:
+
+Raspberry Pi Pico W
+USB kabel
+mobilní telefon s aplikací nRF Connect
+Zapojení
+
+Není potřeba zapojovat žádné externí součástky. Raspberry Pi Pico W má Bluetooth Low Energy (BLE) vestavěné.
+
+Pico W → USB → počítač
+
+Pro ukázku komunikace byla použita vestavěná LED na Pico W.
+
+Postup
+Raspberry Pi Pico W jsem připojil pomocí USB k počítači.
+V programu Thonny jsem vytvořil MicroPython program pro Bluetooth Low Energy.
+Pico W začalo vysílat jako Bluetooth zařízení s názvem PicoW-Bluetooth.
+V telefonu jsem pomocí aplikace nRF Connect zařízení vyhledal a připojil se k němu.
+Program vytvořil BLE charakteristiku, přes kterou lze z telefonu posílat textové příkazy.
+Při odeslání příkazu ON se rozsvítí vestavěná LED.
+Při odeslání příkazu OFF vestavěná LED zhasne.
+Přijaté příkazy se zároveň zobrazují v konzoli programu Thonny.
