@@ -1,0 +1,6 @@
+MAX7219	Pico W	Význam
+VCC	VBUS (5 V)	Napájení
+GND	GND	Zem
+DIN	GP19	Datový vstup
+CS	GP17	Výběr zařízení
+CLK	GP18	Hodinový signál
