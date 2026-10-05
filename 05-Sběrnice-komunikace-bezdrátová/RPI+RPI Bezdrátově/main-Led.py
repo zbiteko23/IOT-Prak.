@@ -1,0 +1,54 @@
+import network
+import socket
+from machine import Pin
+from time import sleep
+
+SSID = "Zub"
+HESLO = "12345678"
+
+led = Pin(15, Pin.OUT)
+led.off()
+
+# Pripojeni k Wi-Fi
+wifi = network.WLAN(network.STA_IF)
+wifi.active(True)
+wifi.connect(SSID, HESLO)
+
+print("Pripojovani k Wi-Fi...")
+
+while not wifi.isconnected():
+    sleep(0.5)
+
+ip = wifi.ifconfig()[0]
+
+print("Wi-Fi pripojena!")
+print("IP Pico W 2:", ip)
+
+# Spusteni serveru
+server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+server.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+server.bind(("0.0.0.0", 5000))
+server.listen(1)
+
+print("Cekam na Pico W 1...")
+
+while True:
+    conn, addr = server.accept()
+    print("Pripojeno:", addr)
+
+    while True:
+        data = conn.recv(32)
+
+        if not data:
+            break
+
+        zprava = data.decode().strip()
+        print("Prijato:", zprava)
+
+        if zprava == "ON":
+            led.on()
+
+        elif zprava == "OFF":
+            led.off()
+
+    conn.close()

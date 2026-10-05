@@ -1,0 +1,28 @@
+Pico W 1 – odesílač:
+GP14 ───── tlačítko ───── GND
+
+Tlačítko používá interní PULL_UP rezistor Raspberry Pi Pico W.
+Pico W 2 – přijímač:
+GP15 ── rezistor 220–330 Ω ── LED ── GND
+
+LED musí být zapojena správnou polaritou:
+GP15 → rezistor → anoda (+) LED
+                   │
+                 LED
+                   │
+                katoda (-)
+                   ↓
+                  GND
+
+Princip komunikace
+      PICO W 1                           PICO W 2
+     (odesílač)                         (přijímač)
+
+      Tlačítko                              LED
+         │                                   ▲
+         ↓                                   │
+       GP14                                GP15
+         │                                   │
+         │          Wi-Fi                    │
+         └── "ON"  )))))))))))))))))) ──────┘
+         └── "OFF" )))))))))))))))))) ──────┘

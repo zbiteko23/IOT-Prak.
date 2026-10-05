@@ -1,0 +1,12 @@
+V tomto cvičení jsou použita dvě Raspberry Pi Pico W, která spolu komunikují bezdrátově pomocí Wi-Fi.
+Obě Pico W jsou připojena ke stejné Wi-Fi síti. První Pico slouží jako odesílač a je k němu připojeno tlačítko. Druhé Pico slouží jako přijímač a je k němu připojena LED.
+Po stisknutí tlačítka na prvním Pico W se přes Wi-Fi odešle zpráva ON. Druhé Pico W zprávu přijme a rozsvítí LED. Po uvolnění tlačítka se odešle zpráva OFF a LED zhasne.
+Komunikace probíhá bez datových vodičů mezi oběma Pico.
+Použité součástky
+- 2× Raspberry Pi Pico W
+- 1× tlačítko
+- 1× LED
+- 1× rezistor 220–330 Ω
+- 2× breadboard
+- propojovací vodiče
+- Wi-Fi síť

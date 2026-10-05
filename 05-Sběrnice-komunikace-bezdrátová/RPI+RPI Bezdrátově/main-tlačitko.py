@@ -1,0 +1,51 @@
+import network
+import socket
+from machine import Pin
+from time import sleep
+
+SSID = "Zub"
+HESLO = "12345678"
+
+IP_PICO_2 = "10.28.104.179"
+PORT = 5000
+
+button = Pin(14, Pin.IN, Pin.PULL_UP)
+
+# Pripojeni k Wi-Fi
+wifi = network.WLAN(network.STA_IF)
+wifi.active(True)
+wifi.connect(SSID, HESLO)
+
+print("Pripojovani k Wi-Fi...")
+
+while not wifi.isconnected():
+    sleep(0.5)
+
+print("Wi-Fi pripojena!")
+print("IP Pico W 1:", wifi.ifconfig()[0])
+
+# Pripojeni k druhemu Pico
+sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+sock.connect((IP_PICO_2, PORT))
+
+print("Pripojeno k Pico W 2!")
+
+posledni_stav = None
+
+while True:
+
+    if button.value() == 0:
+        stav = "ON"
+    else:
+        stav = "OFF"
+
+    # Posleme zpravu jen pri zmene
+    if stav != posledni_stav:
+
+        sock.send((stav + "\n").encode())
+
+        print("Odeslano:", stav)
+
+        posledni_stav = stav
+
+    sleep(0.05)
