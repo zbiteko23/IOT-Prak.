@@ -1,4 +1,10 @@
-Raspberry Pi Pico W komunikuje s řadičem MAX7219 pomocí SPI. Pico posílá p
-řes DIN data určující, které LED mají svítit. CLK synchronizuje přenos dat
- a CS vybírá zařízení, se kterým Pico právě komunikuje. Program inicializu
-je MAX7219 a následně na LED matici zobrazí smajlíka.
+UART je způsob sériové komunikace, pomocí kterého mohou dvě zařízení mezi sebou posílat data.
+V tomto cvičení jsou propojena dvě Raspberry Pi Pico. První Pico odesílá zprávy pomocí pinu TX a druhé Pico je přijímá pomocí pinu RX.
+Komunikace probíhá obousměrně – zařízení mohou data odesílat i přijímat.
+Použité signály:
+- TX – odesílání dat
+- RX – přijímání dat
+- GND – společná zem
+Použité součástky
+- 2× Raspberry Pi Pico
+- 3× propojovací vodič

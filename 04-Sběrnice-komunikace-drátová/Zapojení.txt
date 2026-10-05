@@ -1,6 +1,12 @@
-MAX7219	Pico W	Význam
-VCC	VBUS (5 V)	Napájení
-GND	GND	Zem
-DIN	GP19	Datový vstup
-CS	GP17	Výběr zařízení
-CLK	GP18	Hodinový signál
+Raspberry Pi Pico 1	Raspberry Pi Pico 2
+GP0 (TX)	GP1 (RX)
+GP1 (RX)	GP0 (TX)
+GND	GND
+
+
+Schéma
+       Raspberry Pi Pico 1              Raspberry Pi Pico 2
+
+          GP0 (TX) ──────────────────→ GP1 (RX)
+          GP1 (RX) ←────────────────── GP0 (TX)
+             GND ─────────────────────── GND
