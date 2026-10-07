@@ -1,0 +1,4 @@
+Zapojení
+
+GPIO17 ── rezistor 220–330 Ω ──►| ── GND
+                                LED

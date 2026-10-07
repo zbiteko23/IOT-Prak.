@@ -1,0 +1,14 @@
+Zapojení
+Použité součástky:
+- Raspberry Pi
+- nepájivé pole
+- LED
+- rezistor 220–330 Ω
+- propojovací vodiče
+Zapojení:
+GPIO17 ─── rezistor 220–330 Ω ───►| ─── GND
+                                  LED
+
+Konkrétně:
+GPIO17 → rezistor → delší nožička LED (+)
+kratší nožička LED (−) → GND

@@ -1,0 +1,3 @@
+Popis do protokolu
+Cvičení 7 – Analog I/O
+Cílem úlohy je regulovat jas LED připojené k Raspberry Pi pomocí grafického posuvníku v Pythonu. Protože Raspberry Pi nemá klasický analogový výstup, používá se PWM (Pulse Width Modulation). Změnou střídy PWM se mění průměrný výkon dodávaný LED, a tím její jas.

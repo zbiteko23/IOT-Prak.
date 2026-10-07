@@ -1,0 +1,2 @@
+Popis:
+Cílem úlohy je ovládat LED připojenou k Raspberry Pi pomocí tlačítek v jednoduchém grafickém rozhraní vytvořeném v Pythonu. Program obsahuje dvě tlačítka ZAPNOUT a VYPNOUT. Po stisknutí tlačítka ZAPNOUT se na GPIO17 nastaví logická 1 a LED se rozsvítí. Po stisknutí VYPNOUT se nastaví logická 0 a LED zhasne.
