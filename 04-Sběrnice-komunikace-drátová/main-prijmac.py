@@ -1,13 +1,10 @@
-from machine import UART, Pin
-from time import sleep
+from machine import Pin, UART
 
-uart = UART(0, baudrate=9600, tx=Pin(0), rx=Pin(1))
+uart = UART(0, 9600, rx=Pin(1))
+led = Pin(16, Pin.OUT)
 
 while True:
     if uart.any():
-        zprava = uart.readline()
-
-        if zprava:
-            print("Prijato:", zprava.decode().strip())
-
-    sleep(0.1)
+        data = uart.read()
+        if data:
+            led.value(data[-1:] == b"1")

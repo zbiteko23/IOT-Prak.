@@ -1,10 +1,3 @@
-UART je způsob sériové komunikace, pomocí kterého mohou dvě zařízení mezi sebou posílat data.
-V tomto cvičení jsou propojena dvě Raspberry Pi Pico. První Pico odesílá zprávy pomocí pinu TX a druhé Pico je přijímá pomocí pinu RX.
-Komunikace probíhá obousměrně – zařízení mohou data odesílat i přijímat.
-Použité signály:
-- TX – odesílání dat
-- RX – přijímání dat
-- GND – společná zem
-Použité součástky
-- 2× Raspberry Pi Pico
-- 3× propojovací vodič
+Cílem úlohy je vytvořit komunikaci mezi dvěma Raspberry Pi Pico W pomocí UART. První Pico slouží jako vysílač a druhé jako přijímač.
+
+Po stisknutí tlačítka na prvním Pico se odešle hodnota 1 a na druhém Pico se rozsvítí LED. Po uvolnění tlačítka se odešle hodnota 0 a LED zhasne.

@@ -1,12 +1,7 @@
-Raspberry Pi Pico 1	Raspberry Pi Pico 2
-GP0 (TX)	GP1 (RX)
-GP1 (RX)	GP0 (TX)
-GND	GND
-
-
-Schéma
-       Raspberry Pi Pico 1              Raspberry Pi Pico 2
-
-          GP0 (TX) ──────────────────→ GP1 (RX)
-          GP1 (RX) ←────────────────── GP0 (TX)
-             GND ─────────────────────── GND
+Zapojení
+Součástka	Připojení
+Pico 1 GP0 (TX, pin 1)	Pico 2 GP1 (RX, pin 2)
+Pico 1 GND	Pico 2 GND
+Tlačítko	Pico 1 GP15 (pin 20) a GND (pin 18)
+LED přes rezistor	Pico 2 GP16 (pin 21)
+Druhá nožička LED	Pico 2 GND (pin 23)

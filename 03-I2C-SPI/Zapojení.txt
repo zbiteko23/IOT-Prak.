@@ -1,12 +1,19 @@
-      Raspberry Pi Pico                 LCD 16x2 + I2C
-     ┌─────────────────┐               ┌───────────────┐
-     │               		  │               │                    │
-     │ GND ──────────────────────────→ GND               │
-     │            		      │               │                    │
-     │ 3V3(OUT) ─────────────────────→ VCC                 │
-     │             		      │               │                    │
-     │ GP0 (SDA) ────────────────────→ SDA                 │
-     │              		  │               │                    │
-     │ GP1 (SCL) ────────────────────→ SCL                 │
-     │              		  │               │                    │
-     └─────────────────┘               └───────────────┘
+Použité součástky
+- Raspberry Pi Pico W
+- LCD displej 1602 s I²C modulem
+- Potenciometr
+- Nepájivé pole
+- Propojovací vodiče
+Zapojení LCD displeje
+LCD	Raspberry Pi Pico W
+GND	GND – pin 38
+VCC	3V3(OUT) – pin 36
+SDA	GP0 – pin 1
+SCL	GP1 – pin 2
+
+Napájení 3,3 V platí pro LCD modul, který ho podporuje.
+Zapojení potenciometru
+Potenciometr	Raspberry Pi Pico W
+Levý krajní pin	3V3(OUT) – pin 36
+Prostřední pin	GP26 (ADC0) – pin 31
+Pravý krajní pin	GND – pin 33

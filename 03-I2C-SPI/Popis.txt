@@ -1,3 +1,3 @@
-V tomto cvičení je pomocí I2C připojen alfanumerický LCD displej 16x2
-k Raspberry Pi Pico. Pico posílá přes I2C data do LCD displeje, který
-následně zobrazí text.
+Cílem úlohy je zobrazovat hodnotu potenciometru na LCD displeji pomocí Raspberry Pi Pico W. Potenciometr slouží jako analogový vstup a LCD displej jako výstup. Komunikace s displejem probíhá přes sběrnici I²C.
+
+Při otáčení potenciometrem se mění hodnota od 0 do 65535, která se průběžně zobrazuje na LCD.
