@@ -1,0 +1,6 @@
+Zapojení
+LCD displej	Raspberry Pi 4
+GND	GND – fyzický pin 6
+VCC	5V – fyzický pin 2
+SDA	GPIO2 (SDA1) – fyzický pin 3
+SCL	GPIO3 (SCL1) – fyzický pin 5

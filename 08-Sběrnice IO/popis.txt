@@ -1,0 +1,3 @@
+Cílem úlohy je připojit LCD displej 1602 k Raspberry Pi 4 pomocí sběrnice I²C a zobrazit na něm text. Program využívá knihovnu smbus pro komunikaci s displejem.
+
+Na prvním řádku displeje se zobrazí text „Ahoj svete!“ a na druhém řádku „Raspberry Pi 4“.
